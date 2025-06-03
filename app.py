@@ -75,15 +75,15 @@ def construir_estadio():
     else:
         tecnologia = random.choice(tecnologias_grau_3)
 
-return jsonify({
-    "nome": nome,
-    "cidade": cidade,
-    "estado": estado,
-    "capacidade": capacidade,
-    "grau_tecnologia": grau,
-    "custo_total": custo_total,
-    "tecnologia_principal": tecnologia
-})
+    return jsonify({
+        "nome": nome,
+        "cidade": cidade,
+        "estado": estado,
+        "capacidade": capacidade,
+        "grau_tecnologia": grau,
+        "custo_total": custo_total,
+        "tecnologia_principal": tecnologia
+    })
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
